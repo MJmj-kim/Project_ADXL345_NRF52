@@ -1,5 +1,5 @@
 Output/Release/Obj/twi_sensor_pca10056/nrfx_twim.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\modules\nrfx\drivers\src\nrfx_twim.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\modules\nrfx\drivers\src\nrfx_twim.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -44,7 +44,7 @@ Output/Release/Obj/twi_sensor_pca10056/nrfx_twim.o: \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twim.h \
  ../../../../../../modules/nrfx/hal/nrf_twim.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\modules\nrfx\drivers\src\prs/nrfx_prs.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\modules\nrfx\drivers\src\prs/nrfx_prs.h \
  ../../../../../../integration/nrfx/nrfx_log.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
@@ -53,7 +53,6 @@ Output/Release/Obj/twi_sensor_pca10056/nrfx_twim.o: \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/strerror/nrf_strerror.h \
  ../../../../../../components/libraries/log/src/nrf_log_internal.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \

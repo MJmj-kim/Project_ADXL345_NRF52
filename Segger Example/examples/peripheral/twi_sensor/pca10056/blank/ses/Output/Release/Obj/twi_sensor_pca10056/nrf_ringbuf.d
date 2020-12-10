@@ -1,6 +1,6 @@
 Output/Release/Obj/twi_sensor_pca10056/nrf_ringbuf.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\components\libraries\ringbuf\nrf_ringbuf.c \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\components\libraries\ringbuf\nrf_ringbuf.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\components\libraries\ringbuf\nrf_ringbuf.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\components\libraries\ringbuf\nrf_ringbuf.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/stdint.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/util/sdk_common.h \

@@ -1,5 +1,6 @@
 Output/Release/Obj/twi_sensor_pca10056/ADXL345.o: \
- C:\kmj\NRF_ADXL345-master\ADXL345.c C:\kmj\NRF_ADXL345-master\ADXL345.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\ADXL345.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\ADXL345.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/__crossworks.h \
  ../../../../../../components/boards/boards.h \
@@ -57,7 +58,6 @@ Output/Release/Obj/twi_sensor_pca10056/ADXL345.o: \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/strerror/nrf_strerror.h \
  ../../../../../../components/libraries/log/src/nrf_log_internal.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \

@@ -1,5 +1,5 @@
 Output/Release/Obj/twi_sensor_pca10056/nrfx_twi.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\modules\nrfx\drivers\src\nrfx_twi.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\modules\nrfx\drivers\src\nrfx_twi.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \

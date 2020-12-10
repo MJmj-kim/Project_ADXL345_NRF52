@@ -1,5 +1,5 @@
 Output/Release/Obj/twi_sensor_pca10056/main.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\examples\peripheral\twi_sensor\main.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\examples\peripheral\twi_sensor\main.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/__crossworks.h \
  ../../../../../../components/boards/boards.h \
@@ -59,7 +59,6 @@ Output/Release/Obj/twi_sensor_pca10056/main.o: \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/strerror/nrf_strerror.h \
  ../../../../../../components/libraries/log/src/nrf_log_internal.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
@@ -67,7 +66,13 @@ Output/Release/Obj/twi_sensor_pca10056/main.o: \
  ../../../../../../components/libraries/log/nrf_log_ctrl.h \
  ../../../../../../components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
- ../../../../../../components/libraries/memobj/nrf_memobj.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/stdlib.h \
- ../../../../../../components/libraries/balloc/nrf_balloc.h \
- ../../../../../../components/libraries/log/nrf_log_default_backends.h
+ ../../../../../../components/libraries/log/nrf_log_default_backends.h \
+ ../../../../../../../nrf_pwm_audio.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_pwm.h \
+ ../../../../../../modules/nrfx/hal/nrf_pwm.h \
+ ../../../../../../../app_timer.h \
+ ../../../../../../integration/nrfx/legacy/nrf_drv_clock.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_clock.h \
+ ../../../../../../modules/nrfx/hal/nrf_clock.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_power_clock.h \
+ ../../../../../../../voiceSample/attention.h

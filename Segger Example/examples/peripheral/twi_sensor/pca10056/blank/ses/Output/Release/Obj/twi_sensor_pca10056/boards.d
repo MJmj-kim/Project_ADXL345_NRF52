@@ -1,6 +1,6 @@
 Output/Release/Obj/twi_sensor_pca10056/boards.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\components\boards\boards.c \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\components\boards\boards.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\components\boards\boards.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\components\boards\boards.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
@@ -43,4 +43,4 @@ Output/Release/Obj/twi_sensor_pca10056/boards.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\components\boards\pca10056.h
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\components\boards\pca10056.h

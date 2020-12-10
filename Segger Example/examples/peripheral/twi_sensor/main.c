@@ -59,6 +59,25 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
+
+/*speaker header*/
+#include "nrf_pwm_audio.h"
+        
+#include "app_util_platform.h"
+#include "app_timer.h"
+
+#include "nrf_drv_clock.h"
+#include "nrf_log.h"
+#include "nrf_log_ctrl.h"
+#include "nrf_log_default_backends.h"
+
+#include "attention.h"
+
+
+
+
+
+
 /* TWI instance ID. */
 static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID);
 
@@ -95,12 +114,27 @@ void ADXL345_set_mode(void);
 
 int main(void)
 {
-   
     
     
     APP_ERROR_CHECK(NRF_LOG_INIT(NULL));
     NRF_LOG_DEFAULT_BACKENDS_INIT();
+
+
+   //--------------------------  AUDIO SETTING -----------------------------
+     nrf_drv_clock_init();
+    
+     
+     nrf_drv_clock_lfclk_request(NULL);
+     app_timer_init();
+
+
+     uint8_t const pwm_audio_pin   = 3;        ///< GPIO pin to use for output
+     bool const pwm_audio_highdrive= false;    ///< whether to use GPIO pin in highdrive mode to increase volume
+
+     nrf_pwm_audio_init(pwm_audio_pin, pwm_audio_highdrive);   
+  //--------------------------  AUDIO SETTING -----------------------------
    
+
    
     printf("\r\nTWI Accelerometer example started\n");
    
@@ -108,7 +142,8 @@ int main(void)
     twi_init();
     ADXL345_set_mode();
     ADXL345_I2C_Set_DATAX0();
-    nrf_gpio_cfg_output(LED_2);
+
+   
     printf("---------------------------------\n\n\n");
     while (true)
     {
@@ -125,20 +160,29 @@ int main(void)
         printf("Y = %lf \n", ay);
         printf("Z = %lf \n", az);
 
-         if(ay > 0.5){
-          nrf_gpio_pin_clear(LED_2);
-         } else {
-         nrf_gpio_pin_set(LED_2);
-         }
+         if(ay > 0.5)
+         {
+          nrf_pwm_audio_playback(attention_raw, sizeof(attention_raw), NRF_PWM_AUDIO_SAMPLERATE_16K, 1.0, 0);
+
+          // wait for playback to end
+          
+          
+          while (nrf_pwm_audio_is_playing()) { __WFE(); NRF_LOG_FLUSH(); }          
+          
+          /*
+
+          // loop for eternity (but in the meantime, button presses will be evaluated)          
+          while (1) { __WFE(); NRF_LOG_FLUSH(); } 
+          
+          // uninitialize PWM audio module (we will never reach this line in this program)
+          nrf_pwm_audio_destroy();  
+          
+          */
+         } 
   
-        NRF_LOG_FLUSH();
-    }
+        NRF_LOG_FLUSH();       
+    }    
 }
-
-
-
-
-
 
 
 void ADXL345_set_mode(void)
@@ -150,12 +194,10 @@ void ADXL345_set_mode(void)
     APP_ERROR_CHECK(err_code);
 
 
-    ADXL345_I2C_Sleep_Mode();
-    
+    ADXL345_I2C_Sleep_Mode();    
 
     ADXL345_I2C_Init_Measure_Mode();
-    
-     
+         
     
     ADXL345_I2C_Inactivity_Threshold(75);
     ADXL345_I2C_Activity_Threshold(75);

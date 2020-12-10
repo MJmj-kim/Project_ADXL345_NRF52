@@ -1,6 +1,6 @@
 Output/Release/Obj/twi_sensor_pca10056/nrf_drv_uart.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\integration\nrfx\legacy\nrf_drv_uart.c \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\integration\nrfx\legacy\nrf_drv_uart.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\integration\nrfx\legacy\nrf_drv_uart.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\integration\nrfx\legacy\nrf_drv_uart.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \

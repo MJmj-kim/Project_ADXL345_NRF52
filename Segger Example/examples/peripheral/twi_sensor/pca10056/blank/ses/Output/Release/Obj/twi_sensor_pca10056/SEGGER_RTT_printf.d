@@ -1,7 +1,7 @@
 Output/Release/Obj/twi_sensor_pca10056/SEGGER_RTT_printf.o: \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\external\segger_rtt\SEGGER_RTT_printf.c \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\external\segger_rtt\SEGGER_RTT.h \
- C:\kmj\NRF_ADXL345-master\Segger\ Example\external\segger_rtt\SEGGER_RTT_Conf.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\external\segger_rtt\SEGGER_RTT_printf.c \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\external\segger_rtt\SEGGER_RTT.h \
+ C:\nRF5_SDK_15.3.0_59ac345\examples\peripheral\twi_master_ADSL345\Segger\ Example\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.20/include/stdint.h \
