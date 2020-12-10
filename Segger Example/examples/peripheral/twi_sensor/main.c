@@ -112,7 +112,7 @@ void twi_init (void)
 void ADXL345_set_mode(void);
 
 
-int main(void)
+int main(void) 
 {
     
     
@@ -160,7 +160,7 @@ int main(void)
         printf("Y = %lf \n", ay);
         printf("Z = %lf \n", az);
 
-         if(ay > 0.5)
+         if(az < 0.866)
          {
           nrf_pwm_audio_playback(attention_raw, sizeof(attention_raw), NRF_PWM_AUDIO_SAMPLERATE_16K, 1.0, 0);
 
