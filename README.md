@@ -1,13 +1,5 @@
 # ADXL 345 for NRF52
 
-This is the library for Accelerometer ADXL345 using NRF52. 
-This library uses the I2C bus.
-
-
-
-  
-![alt text](https://cdn-shop.adafruit.com/970x728/1231-00.jpg)
-
 
 
 ### How to use
